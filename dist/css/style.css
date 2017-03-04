@@ -1,6 +1,5 @@
 h1,h2,h3,h4,h5,h6{line-height:1.1}
 body,html{height:100%;text-rendering:optimizeLegibility;-webkit-font-smoothing:subpixel-antialiased;-webkit-font-smoothing-font-family:'Ubuntu',sans-serif}
-body{background-color:#5c818b;padding:10% 2%;position:relative}
 ul{padding:0;font-size:0}
 i{vertical-align:middle}
 img{max-width:100%;height:auto;display:block}
@@ -13,6 +12,7 @@ a,a:active,a:focus,a:hover,a:link,a:visited{outline:0;text-decoration:none}
 }
 @media (min-width:1200px){.col-lg-15{width:20%;float:left}
 }
+.title-banner,footer{position:absolute;width:100%}
 .blue{background-color:#005C89}
 .lblue{background-color:#6EBDEA}
 .green{background-color:#4FAF47}
@@ -105,11 +105,14 @@ h6{font-size:10px}
 }
 @media screen and (min-width:1200px){h6{font-size:12px;line-height:1.1}
 }
-.content-header{background-color:#cee3e3;border-radius:8px;padding:5%;-webkit-box-shadow:0 0 15px #424242;box-shadow:0 0 15px #424242}
-.content-header h1{color:#5c818b;font-weight:700}
-.content-header ul{width:50%;margin:0 auto}
-.content-header ul li{width:30%}
-.content-header ul li:nth-child(1) img{width:100%}
-.content-header ul li:nth-child(2) p{font-size:80px;font-weight:500;color:#5c818b;position:relative;top:20px}
-.content-header ul li:nth-child(3) img{width:60%}
-footer{color:#eed28e;position:absolute;bottom:10px;width:100%;left:0}
+body{background-color:#2B577A;font-family:Dosis,sans-serif}
+.banner{position:absolute;top:5%;bottom:2%;left:0;right:0;background:url(/dist/img/developer.png) center center no-repeat;background-size:cover;display:none}
+@media (min-width:480px){.banner{top:12%;bottom:4%}
+}
+.title-banner{top:2%;z-index:2}
+.title-banner ul li{font-size:18px;color:#eed28e;opacity:0;font-weight:700;padding:0 3px}
+@media (min-width:480px){.title-banner ul li{font-size:30px;padding:0 5px}
+}
+footer{color:#eed28e;bottom:10px;left:0;font-weight:300}
+footer a{color:#eed28e;-webkit-transition:all .3s ease;transition:all .3s ease}
+footer a:hover,footer a:visited{color:#fff}
