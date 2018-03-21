@@ -1,0 +1,76 @@
+body{
+  background-color: $blue;
+  font-family: 'Dosis', sans-serif;
+}
+
+.banner{
+  position: absolute;
+  top: 5%;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  background: url('../img/developer.png') no-repeat center center;
+  background-size: cover;
+  display: none;
+  @include bp-xs{
+    top: 12%;
+    bottom: 4%;
+  }
+}
+
+.title-banner{
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  z-index: 2;
+  ul{
+    text-align: center;
+    li{
+      list-style-type: none;
+      display: inline;
+      font-size: 18px;
+      color: #eed28e;
+      opacity: 0;
+      font-weight: bold;
+      padding: 0 3px;
+      @include bp-xs{
+        font-size: 30px;
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+footer{
+  color: #eed28e;
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  left: 0;
+  font-weight: 300;
+  a{
+    color: $beige;
+    transition: all .3s ease;
+    &:hover, &:visited{
+      color: white
+    }
+  }
+}
+
+
+
+
+
+
+// //small devices => 480px
+// +bp-xs
+
+// //medium devices => 768px
+// +bp-sm
+
+// //large devices => 992px
+// +bp-md
+
+// //extra large devices => 1200px
+// +bp-lg
